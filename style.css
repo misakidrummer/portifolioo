@@ -77,7 +77,12 @@
 
 /* menu btn styling */
 
-
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
 
 
 
@@ -88,7 +93,7 @@
 .home{
     display: flex;
     background: url("images/image5.jpg") no-repeat center;
-    height: 100vh;
+    height: 89vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
@@ -118,12 +123,36 @@
     font-weight: 500;
 }
 
-
 /* responsive media query start */
-@media (max-width: 947px){
 
+@media (max-width: 947px ){ 
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+     display: block;   
+     z-index: 999;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #111;
+        text-align: center;   
+        padding-top: 80px;
+    }
+    
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display:inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
 }
-
 
 
 
